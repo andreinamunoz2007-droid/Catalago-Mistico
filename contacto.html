@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="imagenes/logo_flores.jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="estilocontacto.css">
+    <title>Contacto - El Jardín de los Significados</title>
+</head>
+<body>
+  
+    <header class="header-glass">
+        <nav class="navbar-glass">
+            <a href="index.html" class="logo">El<span>Jardín</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">El Jardín</a></li>
+                <li><a href="diccionario.html">Glosario Emocional</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tarjeta-formulario">
+            <br><br><br><br>
+            <h2>Formulario de Registro / Consulta Botánica</h2>
+        
+            
+            <form action="#" method="POST">
+                
+                <div class="controlador">
+                    <p><b>GÉNERO</b></p>
+                    <input type="radio" id="m" name="genero" value="masculino">
+                    <label for="m">Masculino</label>
+
+                    <input type="radio" id="f" name="genero" value="femenino">
+                    <label for="f">Femenino</label>
+                    <br><br>
+
+                    <label for="nombre">
+                        <b>NOMBRE COMPLETO:</b></label>
+                    <input type="text" id="nombre" name="nombre" required 
+                           pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{3,50}" 
+                           title="El nombre solo debe contener letras y un mínimo de 3 caracteres.">
+                    <br><br>
+
+                    <label for="fecha-nac"><b>FECHA DE NACIMIENTO</b></label>
+                    <input type="date" id="fecha-nac" name="fecha-nac" required 
+                           min="1900-01-01" max="2026-12-31">
+                    <br><br>
+                </div>
+
+                <label for="edad"><b>EDAD</b></label>
+                <input type="number" id="edad" name="edad" min="1" max="100" required>
+                <br><br>
+
+                <div class="controlador">
+                    <label for="telefono"><b>TELÉFONO DE CONTACTO (EJ: 0414-1234567):</b></label>
+                    <input type="tel" id="telefono" name="telefono" required 
+                           pattern="[0-9]{4}-[0-9]{7}" 
+                           title="Formato requerido: 4 números, un guion y 7 números (Ej: 0414-1234567).">
+                    <br><br>
+                </div>
+
+                <label for="correo"><b>CORREO ELECTRÓNICO</b></label>
+                <input type="email" id="correo" name="correo" placeholder="ej: tu_correo@gmail.com" required>
+                <br><br>
+
+                <div class="controlador">
+                    <label for="categoria"><b>CATEGORÍA FLORAL QUE DESEAS INVESTIGAR:</b></label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="">-- Elige un enfoque espiritual --</option>
+                        <option value="sentimientos">Flores de Amor y Pasión (Rosas, Claveles)</option>
+                        <option value="paz">Flores de Serenidad y Alma (Lavanda, Lirios)</option>
+                        <option value="energia">Flores de Fe y Vitalidad (Girasoles, Calendulas)</option>
+                        <option value="todas">Estudio Completo de Floriografía</option>
+                    </select>
+                    <br><br>
+                </div>
+
+                
+
+                <div class="controlador">
+                    <label for="mensaje"><b>DETALLE DE CONSULTABOTÁNICA O MENSAJE MÍSTICO:
+                    </b></label><br>
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe aquí las flores o intenciones de las que deseas aprender..."></textarea>
+                    <br><br>
+                </div>
+
+                <div class="controlador-checkbox">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los términos de validación de este sitio educativo y botánico.</label>
+                    <br><br>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Consulta Floral</button>
+            </form>
+        </section>
+
+        <section class="informacion-contacto">
+            <br><br>
+            
+    </main>
+
+    <footer class="footer-flex">
+        <p>&copy; 2026 - Catálogo místico que revela el alma de las flores.</p>
+    </footer>
+
+</body>
+</html>

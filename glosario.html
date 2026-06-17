@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glosario Emocional de Flores</title>
+    <link rel="stylesheet" href="Glosario.css">
+</head>
+<body>
+     <header>
+        <nav>
+            
+            <a href="index.html" class="logo">El Jardín</a>
+            
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+               
+                <li><a href="catalogo.html" class="active">El Jardín</a></li>
+                <li><a href="glosario.html">Glosario Emocional</a></li>
+                <li><a href="contacto.html" class="active">Datos</a></li>
+            </ul>
+            
+        </nav>
+        <link rel="stylesheet" href="estilocatalago.css">
+   
+    </header>
+    <div class="container">
+
+        <!-- Encabezado -->
+        <div class="header">
+            <h1>
+                🌸 Glosario Emocional
+                <br><small>flores · diccionario de sentimientos</small>
+            </h1>
+            <div class="subtitle">Cada flor tiene un concepto único. Busca inspiración por el sentimiento que quieras transmitir.</div>
+        </div>
+
+        <!-- Filtros -->
+        <div class="filter-bar">
+            <span class="label">🔍 Filtrar por:</span>
+            <button class="filter-btn all active" data-filter="all">Todas</button>
+            <button class="filter-btn" data-filter="amor">❤️ Amor</button>
+            <button class="filter-btn" data-filter="gratitud">🙏 Gratitud</button>
+            <button class="filter-btn" data-filter="paz">🕊️ Paz</button>
+            <button class="filter-btn" data-filter="prosperidad">✨ Prosperidad</button>
+        </div>
+
+        <!-- Glosario -->
+        <div class="glossary" id="glossary">
+
+            <!-- ===== AMOR ===== -->
+            <div class="entry" data-emotion="amor">
+                <div class="entry-term">
+                    Rosa roja
+                    <span class="scientific">Rosa gallica</span>
+                </div>
+                <div class="entry-def">
+                    <span class="emotion-badge amor">❤️ Amor</span>
+                    <strong>Concepto:</strong> Pasión y entrega absoluta. Es el emblema universal del amor romántico y la devoción eterna. Su color intenso expresa sentimientos que van más allá de las palabras.
+                </div>
+            </div>
+
+            <!-- ===== GRATITUD ===== -->
+            <div class="entry" data-emotion="gratitud">
+                <div class="entry-term">
+                    Rosa amarilla
+                    <span class="scientific">Rosa foetida</span>
+                </div>
+                <div class="entry-def">
+                    <span class="emotion-badge gratitud">🙏 Gratitud</span>
+                    <strong>Concepto:</strong> Amistad y agradecimiento. Celebra los lazos de cariño y la alegría compartida. Es la flor perfecta para decir "gracias" con el corazón abierto.
+                </div>
+            </div>
+
+
+            <!-- ===== PAZ ===== -->
+            <div class="entry" data-emotion="paz">
+                <div class="entry-term">
+                    Lirio blanco
+                    <span class="scientific">Lilium candidum</span>
+                </div>
+                <div class="entry-def">
+                    <span class="emotion-badge paz">🕊️ Paz</span>
+                    <strong>Concepto:</strong> Pureza y serenidad. Es el símbolo de la paz interior y la armonía espiritual. Su elegancia y blancura invitan a la calma y a la conexión con lo esencial.
+                </div>
+            </div>
+
+
+            <!-- ===== PROSPERIDAD ===== -->
+            <div class="entry" data-emotion="prosperidad">
+                <div class="entry-term">
+                    Orquídea
+                    <span class="scientific">Orchidaceae</span>
+                </div>
+                <div class="entry-def">
+                    <span class="emotion-badge prosperidad">✨ Prosperidad</span>
+                    <strong>Concepto:</strong> Lujo y abundancia. Es símbolo de prosperidad y éxito. Su capacidad de florecer en condiciones exigentes la convierte en emblema de fortaleza y buena fortuna.
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="footer">
+            ✦ Cada flor tiene un concepto único. Usa este glosario para encontrar inspiración según el sentimiento que quieras transmitir. ✦
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+
+:root {
+    --color-fondo: #f4f7f6; /* Gris verdoso muy suave y limpio */
+    --color-tarjeta: #ffffff; /* Blanco puro para la tarjeta */
+    --color-texto-principal: #2d3748; /* Gris oscuro para alta legibilidad */
+    --color-texto-secundario: #718096; /* Gris medio para etiquetas y placeholders */
+    --color-acento: #5a8f76; /* Verde botánico apagado para botones y enlaces */
+    --color-acento-hover: #446d59; /* Verde más oscuro para el efecto hover */
+    --color-borde: #e2e8f0; /* Líneas divisorias sutiles */
+    --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-texto-principal);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header-glass {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px); /* Efecto vidrio muy sutil */
+    border-bottom: 1px solid var(--color-borde);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-glass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.navbar-glass .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-texto-principal);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-glass .logo span {
+    color: var(--color-acento);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--color-texto-secundario);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover, 
+.nav-menu a.active {
+    color: var(--color-acento);
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 2rem 60px 2rem; /* Espacio para el header fijo */
+}
+
+.tarjeta-formulario {
+    background: var(--color-tarjeta);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Sombra muy suave */
+    padding: 3rem;
+    width: 100%;
+    max-width: 650px;
+}
+
+.tarjeta-formulario h2 {
+    font-size: 1.8rem;
+    color: var(--color-texto-principal);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+.tarjeta-formulario br {
+    display: none; 
+}
+
+
+.controlador {
+    margin-bottom: 1.5rem;
+}
+
+label, .controlador p b {
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-texto-secundario);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    color: var(--color-texto-principal);
+    background-color: #fafafa;
+    border: 1px solid var(--color-borde);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    outline: none;
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--color-acento);
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(90, 143, 118, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+
+input[type="radio"], 
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: var(--color-acento); 
+    cursor: pointer;
+}
+
+.controlador input[type="radio"] + label {
+    display: inline-block;
+    text-transform: none;
+    font-weight: normal;
+    color: var(--color-texto-principal);
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+.controlador-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.controlador-checkbox label {
+    display: inline;
+    text-transform: none;
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: var(--color-texto-secundario);
+    cursor: pointer;
+}
+.btn-enviar {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-acento);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-enviar:hover {
+    background-color: var(--color-acento-hover);
+}
+
+.btn-enviar:active {
+    transform: scale(0.98);
+}
+
+.footer-flex {
+    background-color: var(--color-tarjeta);
+    border-top: 1px solid var(--color-borde);
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--color-texto-secundario);
+}

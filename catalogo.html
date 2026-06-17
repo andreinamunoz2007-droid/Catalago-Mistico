@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Jardín de los Significados - Catálogo</title>
+    <link rel="stylesheet" href="estilocatalago.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">El Jardín</a>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html" class="active">El Jardín</a></li>
+                <li><a href="glosario.html">Glosario Emocional</a></li>
+                <li><a href="contacto.html" class="active">Datos</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="seccion-titulo">
+            <h1>Nuestro Catálogo Místico</h1>
+            <p>Descubre el lenguaje oculto y los secretos que guarda cada pétalo.</p>
+        </section>
+
+        <div class="jardin-grid" id="jardin-contenedor"></div>
+    </main>
+
+    <div class="modal" id="flor-modal">
+        <div class="modal-contenido">
+            <button class="btn-cerrar" id="btn-cerrar-modal">&times;</button>
+            <h2 id="modal-flor-titulo">Nombre Flor</h2>
+            <p id="modal-flor-significado">Significado místico detallado...</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Catálogo místico que revela el alma de las flores.</p>
+    </footer>
+
+    <script src="maincatalago.js"></script>
+</body>
+</html>
